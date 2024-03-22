@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Intro.mp4') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 690px;
+    background-color: #000000af;
+}
+
+.logo img {
+    width: 12%;
+    margin-left: 30px;
+}
+
+.login-container h1 {
+    color: #fff;
+    margin-bottom: 50px;
+    margin-left: 290px;
+    margin-top: 65px;
+    
+
+}
+
+input {
+    margin-left: 50px;
+    width: 320px;
+    height: 47px;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    float: right;
+    margin-right: 190px;
+    margin-bottom: 30px;
+  
+}
+
+
+
+input::placeholder {
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 12px;
+}
+
+input[type=submit] {
+    width: 320px;
+    height: 45px;
+    background-color: purple;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1px; 
+}
+
+.content {
+    margin-top: 80px;
+    font-size: 9px;
+    margin-left: 55px;
+}
+
+.content h2 {
+    color: rgb(125, 119, 119);
+    margin-top: 300px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+}
+
+.form a {
+    float: left;
+    margin-top: 20px;
+    margin-left: 80px;
+    color: rgb(125, 119, 119);
+    text-decoration: none;
+}
+
+.container a {
+    color: #fff;
+    text-decoration: none;
+}
+#Fussion {
+    position: relative;
+    color: white;
+    font-size: 60px;
+    margin-right: 50px;
+    margin-left: 290px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px purple;
+    transform: translateY(50px); 
+   top: 20px;
+}
+
+#Flick {
+    position: relative;
+    font-size: 60px;
+    margin-right: 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 200px;
+    text-shadow: 5px 5px #800080;
+    transform: translateY(50px); 
+    top: 30px;
+}
+
+/* */

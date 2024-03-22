@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 600px;
+    background-color: #000000af;
+}
+
+.logo  {
+    width: 12%;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+.form h1 {
+    color: #fff;
+    margin-top: 60px; 
+    margin-left: 215px;
+}
+
+input {
+    margin-left: 50px;
+    width: 320px;
+    height: 47px;
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    float: right;
+    margin-right: 190px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input::placeholder {
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 12px;
+}
+
+input[type=submit] {
+    width: 320px;
+    height: 45px;
+    background-color: purple;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 17px;
+}
+
+.content {
+    margin-top: 80px;
+    font-size: 9px;
+    margin-left: 55px;
+}
+
+.content h2 {
+    color: rgb(125, 119, 119);
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    position: relative;
+    top: 20px;
+}
+
+.form a {
+    float: left;
+    margin-top: 20px;
+    margin-left: 80px;
+    color: rgb(125, 119, 119);
+    text-decoration: none;
+}
+
+.container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#Fussion {
+    position: relative;
+    color: white;
+    font-size: 60px;
+    margin-right: 50px;
+    margin-left: 270px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px purple;
+    transform: translateY(50px); 
+   top: 20px;
+}
+
+#Flick {
+    position: relative;
+    font-size: 60px;
+    margin-right: 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 175px;
+    text-shadow: 5px 5px #800080;
+    transform: translateY(50px); 
+    top: 30px;
+}
+
+/*  */

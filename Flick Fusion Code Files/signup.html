@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+
+    <style>
+        body {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .error {
+            background-color: #FFD2D2;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 18px;
+            margin-left: 265px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video style="width: 100%;" autoplay loop muted>
+            <source src="Intro.mp4" type="video/mp4">
+        </video>
+        <div class="login-container">
+            <div class="logo">
+                <i id="Flick" style="margin-top: 200px;">Flick </i>
+                <i id="Fussion" style="margin-top: 200px;">Fussion </i>
+                <img src="logo.png" alt="">
+            </div>
+
+            <div class="form">
+                <h1> Sign Up</h1>
+                <form id="signupForm" action="connect3.php" method="post" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="Name"></label>
+                        <input type="text" class="form-control" id="Name" name="Name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email"></label>
+                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Password"></label>
+                        <input type="Password" class="form-control" id="Password" name="Password" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ConfirmPassword"></label>
+                        <input type="Password" class="form-control" id="ConfirmPassword" name="ConfirmPassword"
+                            placeholder="Confirm Password">
+                    </div>
+
+                    <input type="submit" value="Sign up" id="signInButton">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function validateForm() {
+            var name = document.getElementById('Name');
+            var email = document.getElementById('Email');
+            var password = document.getElementById('Password');
+            var confirmPassword = document.getElementById('ConfirmPassword');
+
+            if (name.value === '') {
+                displayError(name, 'Name cannot be empty');
+                return false;
+            }
+
+            if (email.value === '') {
+                displayError(email, 'Email cannot be empty');
+                return false;
+            } else if (!email.value.includes('@')) {
+                displayError(email, 'Email should contain @');
+                return false;
+            }
+
+            if (password.value === '') {
+                displayError(password, 'Password cannot be empty');
+                return false;
+            }
+
+            if (confirmPassword.value === '') {
+                displayError(confirmPassword, 'Confirm Password cannot be empty');
+                return false;
+            }
+
+            if (password.value !== confirmPassword.value) {
+            displayError(confirmPassword, 'Password and Confirm Password must match');
+            return false;
+            }
+
+
+            try {
+                const response = await fetch('connect3.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams(new FormData(document.getElementById('signupForm'))),
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    window.location.href = 'webmain.html';
+                } else {
+                    alert('Registration failed. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error during form submission:', error);
+                alert('An unexpected error occurred. Please try again later.');
+            }
+
+            return false;
+        }
+
+        function displayError(field, message) {
+            field.classList.add('error');
+
+            var errorElement = document.createElement('div');
+            errorElement.className = 'error-message';
+            errorElement.textContent = message;
+
+            field.parentNode.insertBefore(errorElement, field.nextSibling);
+
+            setTimeout(function () {
+                field.classList.remove('error');
+                errorElement.remove();
+            }, 2000);
+        }
+
+        document.getElementById('signInButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            validateForm();
+        });
+    </script>
+</body>
+
+</html>
