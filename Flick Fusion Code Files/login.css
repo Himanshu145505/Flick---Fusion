@@ -36,14 +36,14 @@ body {
     top: 20px;
 }
 
-/*Flick Fusion Text  */
+/*Text fields styling  */
 
 .form h1 {
     color: #fff;
     margin-top: 60px; 
     margin-left: 215px;
 }
-
+/*Input Field Styling  */
 input {
     margin-left: 50px;
     width: 320px;
