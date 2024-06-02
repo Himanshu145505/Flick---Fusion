@@ -38,11 +38,15 @@
 <body>
 
 
+
+<!--     Background Video Container -->
     
     <div class="container">
         <video style="width: 100%;" autoplay loop muted>
             <source src="Intro.mp4" type="video/mp4">
         </video>
+
+<!--         Login bar container -->
         <div class="login-container">
             <div class="logo">
                 <i id="Flick">Flick </i>
@@ -51,6 +55,8 @@
             </div>
 
             <div class="form">
+
+<!--                 text representation with input fields -->
                 <h1>Login or Sign Up</h1>
                 <form method="post" action="connect4.php" onsubmit="return validateForm()" id="loginForm">
                     <input type="email" name="email" id="email" placeholder="Email" required>
@@ -58,6 +64,8 @@
                     <input type="submit" name="submit" value="Sign In" id="signInButton">
                 </form>
             </div>
+
+<!--             redirection to signup page -->
 
             <div class="content">
                 <h2>New Here? <a href="signup.html">Sign up now.</a></h2>
