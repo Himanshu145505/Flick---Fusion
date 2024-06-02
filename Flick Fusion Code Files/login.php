@@ -9,11 +9,16 @@
     <style>
         body {
             margin: 0;
+
         }
+
+/*         Error message input styling */
 
         .error {
             background-color: #FFD2D2;
         }
+
+/*         error message display */
 
         .error-message {
             color: red;
@@ -21,6 +26,8 @@
             margin-top: 10px;
             margin-left: 250px;
         }
+
+/*         after successfully login redirection transition styling */
 
         body.fade-out {
             transition: opacity 0.5s ease-in-out;
