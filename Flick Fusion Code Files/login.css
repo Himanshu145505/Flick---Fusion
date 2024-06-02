@@ -110,6 +110,8 @@ input[type=submit] {
     text-decoration: none;
 }
 
+/*Fussion text representation Styling  */
+
 #Fussion {
     position: relative;
     color: white;
@@ -121,6 +123,8 @@ input[type=submit] {
     transform: translateY(50px); 
    top: 20px;
 }
+
+/*Flick text representation styling  */
 
 #Flick {
     position: relative;
