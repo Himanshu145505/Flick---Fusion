@@ -58,12 +58,14 @@ input {
     margin-top: 10px;
 }
 
+/*Input field  */
+
 input::placeholder {
     font-size: 17px;
     margin-left: 15px;
     padding: 12px;
 }
-
+/*Submit button stying  */
 input[type=submit] {
     width: 320px;
     height: 45px;
@@ -74,12 +76,14 @@ input[type=submit] {
     margin-top: 17px;
 }
 
+/*bg content styling  */
+
 .content {
     margin-top: 80px;
     font-size: 9px;
     margin-left: 55px;
 }
-
+/*login text styling  */
 .content h2 {
     color: rgb(125, 119, 119);
     margin-top: 0px;
@@ -89,6 +93,8 @@ input[type=submit] {
     top: 20px;
 }
 
+/*form location  */
+
 .form a {
     float: left;
     margin-top: 20px;
@@ -96,6 +102,8 @@ input[type=submit] {
     color: rgb(125, 119, 119);
     text-decoration: none;
 }
+
+/*new user anchor tag styling  */
 
 .container a {
     color: #fff;
