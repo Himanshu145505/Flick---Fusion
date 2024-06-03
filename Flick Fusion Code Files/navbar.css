@@ -131,6 +131,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/*Blink effect of entertainment blended  */
+
 .blink {
     position: absolute;
     transform: translate(-50%, -50%);
