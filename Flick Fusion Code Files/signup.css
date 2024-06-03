@@ -23,6 +23,8 @@ body {
     background-size: cover;
 }
 
+/*Sign up Container  */
+
 .login-container {
     position: absolute;
     top: 50%;
@@ -32,7 +34,7 @@ body {
     height: 690px;
     background-color: #000000af;
 }
-
+/*Flick fusion logo  */
 .logo img {
     width: 12%;
     margin-left: 30px;
