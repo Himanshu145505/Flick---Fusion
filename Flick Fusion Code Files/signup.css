@@ -4,13 +4,15 @@ body {
     font-family: sans-serif;
 }
 
+/*Signup container  */
+
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
-
+/*BG Video  */
 .background-video {
     position: absolute;
     top: 0;
