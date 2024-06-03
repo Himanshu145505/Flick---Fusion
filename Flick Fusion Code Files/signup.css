@@ -65,6 +65,8 @@ input {
   
 }
 
+/*input placeholders styling  */
+
 
 
 input::placeholder {
@@ -72,6 +74,8 @@ input::placeholder {
     margin-left: 15px;
     padding: 12px;
 }
+
+/*Submit Styling  */
 
 input[type=submit] {
     width: 320px;
