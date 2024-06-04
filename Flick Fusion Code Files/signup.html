@@ -83,10 +83,14 @@
             var password = document.getElementById('Password');
             var confirmPassword = document.getElementById('ConfirmPassword');
 
+            // Name Field
+
             if (name.value === '') {
                 displayError(name, 'Name cannot be empty');
                 return false;
             }
+
+            // Email Field
 
             if (email.value === '') {
                 displayError(email, 'Email cannot be empty');
@@ -96,20 +100,28 @@
                 return false;
             }
 
+            // Password Field
+
             if (password.value === '') {
                 displayError(password, 'Password cannot be empty');
                 return false;
             }
+
+            // Confirm Password Field
 
             if (confirmPassword.value === '') {
                 displayError(confirmPassword, 'Confirm Password cannot be empty');
                 return false;
             }
 
+            // Confirm Password validation
+
             if (password.value !== confirmPassword.value) {
             displayError(confirmPassword, 'Password and Confirm Password must match');
             return false;
             }
+
+            // Data Storing
 
 
             try {
@@ -135,6 +147,7 @@
 
             return false;
         }
+        
 
         function displayError(field, message) {
             field.classList.add('error');
