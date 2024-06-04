@@ -147,7 +147,7 @@
 
             return false;
         }
-        
+        // Error Message Display
 
         function displayError(field, message) {
             field.classList.add('error');
@@ -163,6 +163,8 @@
                 errorElement.remove();
             }, 2000);
         }
+
+        // Validate Form
 
         document.getElementById('signInButton').addEventListener('click', function (event) {
             event.preventDefault();
