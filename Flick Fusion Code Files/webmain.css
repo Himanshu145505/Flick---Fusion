@@ -20,20 +20,6 @@ body {
 }
 
 
-/*Card Styling and positioning  */
-
-.box {
-    position: relative;
-    width: 270px;
-    height: 400px;
-    background-color: lightblue;
-    margin: 10px;
-    margin-right: 15.8px;
-    float: left;
-    box-shadow: 0 0 12px white;
-    border-radius: 5px;
-}
-
 
 .container2 {
     padding: 20px;
@@ -49,6 +35,22 @@ body {
 .container4 {
     padding: 20px;
 }
+
+
+/* Card Styling and positioning  */
+
+.box {
+    position: relative;
+    width: 270px;
+    height: 400px;
+    background-color: lightblue;
+    margin: 10px;
+    margin-right: 15.8px;
+    float: left;
+    box-shadow: 0 0 12px white;
+    border-radius: 5px;
+}
+
 
 /*Category Containers  */
 
@@ -75,6 +77,8 @@ body {
     margin-top: 410px;
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
+
+/*Hover Styling  */
 
 .watch-now-button:hover {
     background-color: #874da2; 
