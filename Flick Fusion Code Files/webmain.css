@@ -6,7 +6,7 @@ body {
    background-color:black;
 }
 
-/*Movie Card Alignments  */
+/*Card Containers  */
 
 
 .container1 {
@@ -14,14 +14,13 @@ body {
     margin-bottom: 450px;
 }
 
-/* Movie Card Alignment 2 */
-
 .container11 {
     padding: 20px;
     margin-bottom: 450px;
 }
 
 
+/*Card Styling and positioning  */
 
 .box {
     position: relative;
@@ -50,6 +49,8 @@ body {
 .container4 {
     padding: 20px;
 }
+
+/*category Containers  */
 
 .containercat4 {
     padding: 20px;
