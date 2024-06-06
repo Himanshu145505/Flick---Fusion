@@ -19,6 +19,8 @@ function stopVideo(box) {
 }
 
 
+// Video Contols over hover and in Player
+
 
 function showVideoControls(videoFileName) {
     const videoPath = videoFileName;
