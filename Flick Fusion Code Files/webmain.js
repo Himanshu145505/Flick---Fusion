@@ -8,6 +8,8 @@ function playVideo(videoFileName, box) {
     video.play();
 }
 
+// Stop Video Function
+
 function stopVideo(box) {
     const video = box.querySelector('.poster-video');
 
@@ -15,6 +17,8 @@ function stopVideo(box) {
     video.currentTime = 0;
     video.style.display = 'none';
 }
+
+
 
 function showVideoControls(videoFileName) {
     const videoPath = videoFileName;
