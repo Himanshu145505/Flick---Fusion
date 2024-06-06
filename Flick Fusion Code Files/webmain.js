@@ -1,3 +1,4 @@
+// PLay Video Function for playing video in independent video player
 function playVideo(videoFileName, box) {
     const videoPath = videoFileName;
     const video = box.querySelector('.poster-video');
